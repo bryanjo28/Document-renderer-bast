@@ -40,32 +40,34 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
             </div>
             <div className="p-2">
               <strong>To:</strong>
-              <p data-testid="documentAddress">
-                <p>{document.documentAddress}</p>
+              <p data-testid="documentTo">
+                <p>{document.documentTo}</p>
               </p>
             </div>
             <div className="p-2">
               <strong>Address:</strong>
-              <p data-testid="taxId">
-                <p>{document.taxId}</p>
+              <p data-testid="beneficiaryAddress">
+                <p>{document.beneficiaryAddress}</p>
               </p>
             </div>
             <div className="p-2">
               <strong>NPWP:</strong>
-              
+              <p data-testid="npwp">
+                {document.npwp}
+              </p>
             </div>
           </div>
           <div className="w-1/2 border-black border">
             <div className="p-2">
               <strong> Shipping To: </strong>
-              <p data-testid="skbdno">
-                {document.skbdno}
+              <p data-testid="shippingTo">
+                {document.shippingTo}
               </p>
             </div>
             <div className="p-2">
               <strong>Shipping Address:</strong>
-              <p data-testid="skbdnDate">
-                <p>{document.skbdnDate}</p>
+              <p data-testid="shippingAddress">
+                <p>{document.shippingAddress}</p>
               </p>
             </div>
           </div>
@@ -82,9 +84,9 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
         <div className="flex">
           <div className="w-1/2 border-black border">
             <div className="p-2">
-              <p data-testid="customerNo"><strong>BAST No:</strong> {document.customerNo}</p>
-              <p data-testid="customerTo"><strong>Invoice No: </strong>{document.customerTo}</p>
-              <p data-testid="customerAddress"><strong>SKBDN No: </strong>{document.customerAddress}</p>
+              <p data-testid="bastNo"><strong>BAST No:</strong> {document.bastNo}</p>
+              <p data-testid="invoiceNo"><strong>Invoice No: </strong>{document.invoiceNo}</p>
+              <p data-testid="skbdno"><strong>SKBDN No: </strong>{document.skbdno}</p>
         
             </div>
             
@@ -92,8 +94,8 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
           <div className="w-1/2 border-black border">
             <div className="p-2">
               <p data-testid="customerNo"><strong>BAST Date:</strong> {document.customerNo}</p>
-              <p data-testid="customerTo"><strong>Invoice Date: </strong>{document.customerTo}</p>
-              <p data-testid="customerAddress"><strong>SKBDN Date: </strong>{document.customerAddress}</p>
+              <p data-testid="invoiceDate"><strong>Invoice Date: </strong>{document.invoiceDate}</p>
+              <p data-testid="customerAddress"><strong>SKBDN Date: </strong>{document.skbdnDate}</p>
         
             </div>
             
@@ -148,15 +150,15 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
         <div className="flex">
           <div className="w-1/2 border-black border ">
             <div className="p-2">
-              <p data-testid="bankName" style={{ marginTop: '0.5rem' }}>
-                <p><strong>Handover By:</strong> {document.bankName}</p>
+              <p data-testid="signature1" style={{ marginTop: '0.5rem' }}>
+                <p><strong>Handover By:</strong> {document.signature1}</p>
               </p>
             </div>
           </div>
           <div className="w-1/2 border-black border ">
             <div className="p-2">
-              <p data-testid="bankName" style={{ marginTop: '0.5rem' }}>
-                <p><strong>Received By:</strong> {document.bankName}</p>
+              <p data-testid="signature2" style={{ marginTop: '0.5rem' }}>
+                <p><strong>Received By:</strong> {document.signature2}</p>
               </p>  
             </div>
           </div>
