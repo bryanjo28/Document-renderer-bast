@@ -19,7 +19,7 @@ export interface CocTemplateCertificate extends v2.OpenAttestationDocument {
   taxId: string
   skbdnDate: string;
   termOfPayment: string;
-  customerNo: number;
+  bastDate: string;
   customerTo: string;
   customerAddress: string;
   salesNo: number;
@@ -111,7 +111,7 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
   $template: {
     name: "COC",
     type: v2.TemplateType.EmbeddedRenderer,
-    url: "https://joyful-zuccutto-c3abc1.netlify.app/",
+    url: "https://preeminent-rabanadas-a64d82.netlify.app/",
   },
   skbdno: "12345678",
   documentFrom: "test",
@@ -127,7 +127,7 @@ export const cocTemplateCertificate: CocTemplateCertificate = {
   taxId: "1231",
   skbdnDate: "12 Des 2020",
   termOfPayment: "testt",
-  customerNo: 12312,
+  bastDate: "12 des 2020",
   customerTo: "test",
   customerAddress: "Jalan kelapa lilin III",
   salesNo: 12312,

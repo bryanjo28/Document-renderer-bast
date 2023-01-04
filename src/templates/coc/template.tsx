@@ -76,7 +76,7 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
         <div className="flex">
           <div className="w-full border-black border">
             <div className="p-2" style={{ textAlign: 'center'}}>
-              <p data-testid="formSKBDN"><strong>Berita Acara Serah Terima</strong></p>
+              <p><strong>Berita Acara Serah Terima</strong></p>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
           </div>
           <div className="w-1/2 border-black border">
             <div className="p-2">
-              <p data-testid="customerNo"><strong>BAST Date:</strong> {document.customerNo}</p>
+              <p data-testid="customerNo"><strong>BAST Date:</strong> {document.bastDate}</p>
               <p data-testid="invoiceDate"><strong>Invoice Date: </strong>{document.invoiceDate}</p>
               <p data-testid="customerAddress"><strong>SKBDN Date: </strong>{document.skbdnDate}</p>
         
