@@ -29,7 +29,7 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
         <div className="flex">
           <div className="w-full border-black border ">
             <div className="p-2">
-            <img data-testid="logo" style={{ width: "150px" }} src={logo} />
+              <img data-testid="logo" style={{ width: "150px" }} src={logo} />
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
 
         <div className="flex">
           <div className="w-full border-black border">
-            <div className="p-2" style={{ textAlign: 'center'}}>
+            <div className="p-2" style={{ textAlign: 'center' }}>
               <p><strong>Berita Acara Serah Terima</strong></p>
             </div>
           </div>
@@ -87,19 +87,19 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
               <p data-testid="bastNo"><strong>BAST No:</strong> {document.bastNo}</p>
               <p data-testid="invoiceNo"><strong>Invoice No: </strong>{document.invoiceNo}</p>
               <p data-testid="skbdno"><strong>SKBDN No: </strong>{document.skbdno}</p>
-        
+
             </div>
-            
+
           </div>
           <div className="w-1/2 border-black border">
             <div className="p-2">
               <p data-testid="customerNo"><strong>BAST Date:</strong> {document.bastDate}</p>
               <p data-testid="invoiceDate"><strong>Invoice Date: </strong>{document.invoiceDate}</p>
               <p data-testid="customerAddress"><strong>SKBDN Date: </strong>{document.skbdnDate}</p>
-        
+
             </div>
-            
-          </div>  
+
+          </div>
         </div>
 
         <div className="flex">
@@ -151,15 +151,15 @@ export const CocTemplate: FunctionComponent<TemplateProps<CocTemplateCertificate
           <div className="w-1/2 border-black border ">
             <div className="p-2">
               <p data-testid="signature1" style={{ marginTop: '0.5rem' }}>
-                <p><strong>Handover By:</strong> {document.signature1}</p>
+                <img className="w-1/2 mx-auto" data-testid="signature" src={document.signature1} />
               </p>
             </div>
           </div>
           <div className="w-1/2 border-black border ">
             <div className="p-2">
               <p data-testid="signature2" style={{ marginTop: '0.5rem' }}>
-                <p><strong>Received By:</strong> {document.signature2}</p>
-              </p>  
+              <img className="w-1/2 mx-auto" data-testid="signature" src={document.signature2} />
+              </p>
             </div>
           </div>
         </div>
